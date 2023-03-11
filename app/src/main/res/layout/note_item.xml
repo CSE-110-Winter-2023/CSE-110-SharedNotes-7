@@ -45,7 +45,7 @@
         android:focusable="auto"
         android:gravity="center|center_vertical"
         android:text="@string/close_icon"
-        android:background="?android:attr/selectableItemBackground"
+        android:background="@drawable/ic_launcher_foreground"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

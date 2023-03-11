@@ -27,13 +27,14 @@ public class Note {
     @NonNull
     public String content;
 
+    @SerializedName(value = "version")
+    public long version = 0;
+
     /**
      * When the note was last modified. Used for resolving local (db) vs remote (api) conflicts.
      * Defaults to 0 (Jan 1, 1970), so that if a note already exists remotely, its content is
      * always preferred to a new empty note.
      */
-    @SerializedName(value = "version")
-    public long version = 0;
 
     /** General constructor for a note. */
     public Note(@NonNull String title, @NonNull String content) {
